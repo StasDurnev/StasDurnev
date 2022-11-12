@@ -26,7 +26,7 @@
 - [Checklists]()
 - [Test-Suites and Test-Cases]()
 - [Bug-Reports]()
-- [SQL Queries]()
+- [SQL Queries](https://github.com/StasDurnev/StasDurnev/tree/main/SQL%20Queries)
 - [Postman Collections](https://github.com/StasDurnev/StasDurnev/tree/main/Postman%20collection)
 
 ### For communication
