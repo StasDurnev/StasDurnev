@@ -1,0 +1,231 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases
+,,,,,,,,,,,,,,,,,,,,4,1,"Testing Documentation Stas Durnev",1
+2,"Click the Submit button (with correct values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,minor,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести во все обязательные поля корректные значения.
+2. Нажать на кнопку Submit
+","1. Сообщения об ошибке не выведено
+
+<br>
+2. Регистрация успешно завершена
+","1. 
+2. 
+",,,4,1,"Testing Documentation Stas Durnev",
+3,"Click the Sumbit button (with inccorect values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,other,negative,is-not-automated,actual,no,unknown,classic,"1. Заполнить все обязательные поля невалидными значениями
+2. Нажать на кнопку Submit
+","1. Появляется сообщение об ошибке
+2. Появляется всплывающее окно ""please fill all fields""
+","1. 
+2. 
+",,,4,1,"Testing Documentation Stas Durnev",
+4,"Click the Reset button (with сorrect values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php","Данные обнуляются.",,medium,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести во все обязательные поля корректные значения
+2. Нажать на кнопку ""Reset""
+","1. Значения вводятся
+2. Все заполненные значения обнуляются
+","1. 
+2. 
+",,,4,1,"Testing Documentation Stas Durnev",
+6,"Filed ""First Name"" validation (correct values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле латинские буквы
+","1. Поле принимает валидные значения
+","1. James
+",,,4,1,"Testing Documentation Stas Durnev",
+7,"Click the Logo ""Guru99 telecom""",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,low,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Кликнуть на лого ""Guru99 telecom""
+","1. Переход на главную страницу осуществлен успешно
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+8,"Field ""Last name"" validation (correct values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле латинские буквы
+","1. Поле принимает валидные данные
+","1. James
+",,,4,1,"Testing Documentation Stas Durnev",
+9,"Fill in all required fields (any type of values) and refresh the page",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,low,undefined,other,positive,is-not-automated,actual,no,unknown,classic,"1. Заполнить все обязательные поля любыми значениями и обновить страницу
+","1. Очистка введенной информации
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+10,"Click the Reset button (with incorrect values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести во все обязательные поля неккоректные значения
+2. Нажать на кнопку ""Reset""
+","1. Выводятся сообщения о некорректных значениях в обязательных полях для ввода
+2. Все поля с некорректными значениями и сообщениями об ошибках обнулятся
+","1. 
+2. 
+",,,4,1,"Testing Documentation Stas Durnev",
+11,"Field ""E-mail"" validation (with correct values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле корректные значения
+","1. Значения принимаются, сообщения об ошибке не выводится на экран
+","1. house11@yandex.ru
+",,,4,1,"Testing Documentation Stas Durnev",
+12,"Field ""First Name"" validation (incorrect values (numbers))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле цифры
+","1. Появляется сообщение ""Numbers are not allowed""
+","1. 123
+",,,4,1,"Testing Documentation Stas Durnev",
+13,"Field ""First Name"" validation (incorrect values (spec.characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле спец.символы
+","1. Появляется сообщение ""Special characters are not allowed""
+","1. ""@#&\*
+",,,4,1,"Testing Documentation Stas Durnev",
+14,"Field ""First Name"" validation (incorrect values (cyrillic))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу
+","1. Появляется сообщение "" ""Cyrillic are not allowed""
+","1. Иван
+",,,4,1,"Testing Documentation Stas Durnev",
+15,"Field ""First Name"" validation (incorrect values (empty))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Оставить поле пустым
+","1. Появляется сообщение ""First Name must not be blank""
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+16,"Field ""First Name"" validation (incorrect values (XSS inj.))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле XSS инъекцию
+","1. Появляется сообщение ""Special characters are not allowed""
+","1. \<script>alert(123)\</script>
+",,,4,1,"Testing Documentation Stas Durnev",
+17,"Field ""First Name"" validation (incorrect values (SQL inj.))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле SQL инъекцию
+","1. Появляется сообщение ""Special characters are not allowed""
+","1. **SELECT \* FROM users WHERE username='ProvidedUsername' and password='ProvidedPassword'**
+",,,4,1,"Testing Documentation Stas Durnev",
+18,"Field ""E-mail"" validation (incorrect values (only numbers))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле цифры
+","1. Появляется сообщение ""Email-ID must not be blank""
+","1. 123
+",,,4,1,"Testing Documentation Stas Durnev",
+19,"Field ""E-mail"" validation (incorrect values (only spec. characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле спец.символы
+","1. Появляется сообщение ""Email-ID must not be blank""
+","1. ""@#&\*
+",,,4,1,"Testing Documentation Stas Durnev",
+20,"Field ""E-mail"" validation (incorrect values (only cyrillic))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу
+","1. Появляется сообщение ""Email-ID must not be blank""
+","1. Иван
+",,,4,1,"Testing Documentation Stas Durnev",
+21,"Field ""E-mail"" validation (incorrect values (only latin))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле латинские буквы
+","1. Появляется сообщение ""Email-ID must not be blank""
+","1. James
+",,,4,1,"Testing Documentation Stas Durnev",
+23,"Field ""E-mail"" validation (incorrect values (empty))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Оставить поле пустым
+","1. Появляется сообщение ""Email-ID must not be blank""
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+24,"Background Check",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Кликнуть на чек-бокс ""Done""
+2. Кликнуть на чек-бокс ""Pending""
+","1. Чек-бокс выбран, появляется галочка внутри кружка
+2. Чек-бокс выбран, появляется галочка внутри кружка
+","1. 
+2. 
+",,,4,1,"Testing Documentation Stas Durnev",
+25,"Background Check (with 2 checkboxes)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Кликнуть на чек-бокс ""Done"" и ""Pending""
+","1. Возможно выбрать только один чек-бокс, галочка появляется внутри одного кружка
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+26,"Field ""Last name"" validation (incorrect values (numbers))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле цифры
+","1. Появляется сообщение ""Numbers are not allowed""
+","1. 123
+",,,4,1,"Testing Documentation Stas Durnev",
+27,"Field ""Last name"" validation (incorrect values (spec.characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле спец.символы
+","1. Появляется сообщение ""Special characters are not allowed""
+","1. ""@#&\*
+",,,4,1,"Testing Documentation Stas Durnev",
+28,"Field ""Last name"" validation (incorrect values (cyrillic))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу
+","1. Появляется сообщение ""Numbers are not allowed""
+","1. Иван
+",,,4,1,"Testing Documentation Stas Durnev",
+29,"Field ""Last name"" validation (incorrect values (empty))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Оставить поле пустым
+","1. Появляется сообщение ""Last Name must not be blank""
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+30,"Field  ""Last name"" validation (incorrect values (Numbers, Cyrillic and special characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,normal,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу, цифры, спец. символы
+","1. Появляется сообщение ""Numbers, Cyrillic and special characters are not allowed""
+","1. Иван123@""\*
+",,,4,1,"Testing Documentation Stas Durnev",
+31,"Field ""Address"" validation (correct values)",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,normal,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле корректные значения
+","1. Поле принимает валидные значения, сообщения об ошибке не выводится на экран
+","1. Colorado Springs 10234, d.1
+",,,4,1,"Testing Documentation Stas Durnev",
+32,"Field ""Address"" validation (incorrect values (empty))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Оставить поле пустым
+","1. Появляется сообщение ""Last Name must not be blank""
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+33,"Field ""Address"" validation (incorrect values (cyrillic letters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу
+","1. Появляется сообщение ""Cyrillic are not allowed""
+","1. Иван
+",,,4,1,"Testing Documentation Stas Durnev",
+34,"Field ""Address"" validation (incorrect values (Cyrillic and special characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу и спец.символы
+","1. Появляется сообщение ""Cyrillic and special characters are not allowed""
+","1. Иван""@\*
+",,,4,1,"Testing Documentation Stas Durnev",
+35,"Field ""Address"" validation (incorrect values (special characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле спец.символы
+","1. Появляется сообщение ""Special characters are not allowed""
+","1. ""@\*
+",,,4,1,"Testing Documentation Stas Durnev",
+36,"Field ""Address"" validation (incorrect values (Numbers and special characters))",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,medium,normal,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле цифры и спец.символы
+","1. Появляется сообщение ""Numbers and special characters are now allowed""
+","1. 1112233""@\*
+",,,4,1,"Testing Documentation Stas Durnev",
+41,"Field ""Mobile number"" validation (incorrect values (special characters))",,,,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле спец.символы
+","1. Появляется сообщение ""Special characters are not allowed""
+","1. ""@#&\*
+",,,4,1,"Testing Documentation Stas Durnev",
+42,"Field ""Mobile number"" validation (incorrect values (empty))",,,,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Оставить поле пустым
+","1. Появляется сообщение ""Mobile no must not be blank""
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+43,"Field ""Mobile number"" validation (incorrect values (numbers and spec.characters))",,,,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле цифры и спец.символы
+","1. Появляется сообщение ""Numbers and special characters are not allowed""
+","1. 91191""@\*
+",,,4,1,"Testing Documentation Stas Durnev",
+44,"Field ""Mobile number"" validation (incorrect values (any letters: latin, cyrillic))",,,,,medium,undefined,functional,negative,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле кириллицу
+2. Ввести в поле латиницу
+","1. Появляется сообщение ""Characters are not allowed""
+2. Появляется сообщение ""Characters are not allowed""
+","1. Иван
+2. James
+",,,4,1,"Testing Documentation Stas Durnev",
+45,"Field ""Mobile number"" validation (correct values)",,,,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести в поле цифры
+","1. Значения принимаются успешно, сообщение об ошибке не выводится
+","1. 88005553535
+",,,4,1,"Testing Documentation Stas Durnev",
+46,"Compare the website layuot with design",,https://demo.guru99.com/telecom/addcustomer.php,,,low,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Compare the website layout with design
+","1. The website layout corresponds to the design
+","1. 
+",,,4,1,"Testing Documentation Stas Durnev",
+47,"Hamburger-menu func.",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Кликнуть на гамбургер-меню
+2. Кликнуть на вкладку ""Home""
+3. Кликнуть на вкладку ""Add customer""
+4. Кликнуть на вкладку ""Add Tariff Customer""
+5. Кликнуть на вкладку ""Add Tariff Plan to Customer""
+6. Кликнуть на вкладку ""Pay Billing""
+7. Кликнуть на иконку ""X""
+8. Кликнуть вне поля гамбургер-меню
+","1. Меню открывается
+2. Перенаправление на главную страницу сайта
+3. Перенаправление на страницу осуществлено успешно
+4. Перенаправление на страницу осуществлено успешно
+5. Перенаправление на страницу осуществлено успешно
+6. Перенаправление на страницу осуществлено успешно
+7. Меню закрывается
+8. Меню закрывается
+","1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+",,,4,1,"Testing Documentation Stas Durnev",
+48,"Customer ID is unique",,"Пользователь находится на странице https://demo.guru99.com/telecom/addcustomer.php",,,high,undefined,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Заполнить все обязательные поля валидными значениями
+2. Кликнуть на кнопку Sumbit
+3. На главной странице сайта перейти на Add Customer
+4. Заполнить все обязательные поля валидными значениями
+5. Кликнуть на кнопку Sumbit
+","1. Поля заполняются, сообщений об ошибке не возникают
+2. Регистрация завершена успешно, осуществляется переход на страницу с Customer ID (ID уникальный, состоит из 6 цифр)
+3. Переход успешно осуществлен
+4. Поля заполняются, сообщений об ошибке не возникают
+5. Регистрация завершена успешно, осуществляется переход на страницу с Customer ID (ID уникальный, состоит из 6 цифр)
+","1. First Name - Ivan
+Last Name - Petrov 
+E-mail - house@yandex.ru 
+Address - Moscow, Russia
+Mobile - 8900232311
+2. 
+3. 
+4. First Name - Ivan
+Last Name - Petrov
+E-mail - house@yandex.ru
+Address - Moscow, Russia
+Mobile - 8900232311
+5. 
+",,,4,1,"Testing Documentation Stas Durnev",
+49,"Field ""Mobile number"" validation (with +)",,,,,medium,normal,functional,positive,is-not-automated,actual,no,unknown,classic,"1. Ввести в обязательное поле + и цифры
+","1. Выводится сообщение об ошибке ""Special characters are not allowed""
+","1. +88005553535
+",,,4,1,"Testing Documentation Stas Durnev",
