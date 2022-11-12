@@ -25,7 +25,7 @@
 
 - [Checklists](https://github.com/StasDurnev/StasDurnev/tree/main/Checklists)
 - [Test-Suites and Test-Cases]()
-- [Bug-Reports]()
+- [Bug-Reports](https://github.com/StasDurnev/StasDurnev/blob/main/Bug%20reports.xlsx)
 - [SQL Queries](https://github.com/StasDurnev/StasDurnev/tree/main/SQL%20Queries)
 - [Postman Collections](https://github.com/StasDurnev/StasDurnev/tree/main/Postman%20collection)
 
