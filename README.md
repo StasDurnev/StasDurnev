@@ -21,7 +21,7 @@
 ![Header](https://img.shields.io/badge/QASE-090909?style=for-the-badge&logo=QASE=8cc4d7)
 ![Header](https://img.shields.io/badge/YouTrack-090909?style=for-the-badge&logo=Youtrack=8cc4d7)
 
-### Testing Documentation
+### Testing Artifacts
 
 - [Checklists](https://github.com/StasDurnev/StasDurnev/tree/main/Checklists)
 - [Test-Suites and Test-Cases](https://github.com/StasDurnev/StasDurnev/blob/main/Test%20cases.csv)
