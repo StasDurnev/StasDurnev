@@ -23,7 +23,7 @@
 
 ### Testing Documentation
 
-- [Checklists]()
+- [Checklists](https://github.com/StasDurnev/StasDurnev/tree/main/Checklists)
 - [Test-Suites and Test-Cases]()
 - [Bug-Reports]()
 - [SQL Queries](https://github.com/StasDurnev/StasDurnev/tree/main/SQL%20Queries)
