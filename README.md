@@ -24,7 +24,7 @@
 ### Testing Documentation
 
 - [Checklists](https://github.com/StasDurnev/StasDurnev/tree/main/Checklists)
-- [Test-Suites and Test-Cases]()
+- [Test-Suites and Test-Cases](https://github.com/StasDurnev/StasDurnev/blob/main/Test%20cases.csv)
 - [Bug-Reports](https://github.com/StasDurnev/StasDurnev/blob/main/Bug%20reports.xlsx)
 - [SQL Queries](https://github.com/StasDurnev/StasDurnev/tree/main/SQL%20Queries)
 - [Postman Collections](https://github.com/StasDurnev/StasDurnev/tree/main/Postman%20collection)
